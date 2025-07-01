@@ -1,0 +1,30 @@
+Assignment name  : queens
+Expected files   : queens.c
+Allowed functions: malloc, free, printf, atoi
+--------------------------------------------------------------------------------
+
+Write a program that takes a single positive integer n as argument and solves
+the n-queens problem: placing n queens on an n×n chessboard so that no two
+queens threaten each other.
+
+- Each solution must be printed on a single line as a sequence of numbers
+  separated by spaces, representing the row indices (0-based) of the queen in
+  each column.
+
+- If there are multiple solutions, print them all, each on a new line.
+- If the number of arguments is not 1, or if n <= 0, the program should return 1.
+
+Examples:
+
+$> ./queens 4
+1 3 0 2
+2 0 3 1
+
+$> ./queens 1
+0
+
+$> ./queens 2
+(no output)
+
+$> ./queens 3
+(no output)

@@ -1,0 +1,37 @@
+Assignment name  : permutations
+Expected files   : permutations.c
+Allowed functions: malloc, free, write, printf
+--------------------------------------------------------------------------------
+
+Write a program that takes a string as argument and prints all its unique
+permutations in lexicographical order, one per line.
+
+- The program must handle strings with repeated characters.
+- You must sort the characters of the string before generating permutations.
+- You must generate exactly n! permutations, where n is the length of the string.
+- If the number of arguments is not 1, the program should return 1 without printing anything.
+
+Examples:
+
+$> ./permutations "abc"
+abc
+acb
+bac
+bca
+cab
+cba
+
+$> ./permutations "aab"
+aab
+aba
+baa
+
+$> ./permutations "ab"
+ab
+ba
+
+$> ./permutations "a"
+a
+
+$> ./permutations "aa"
+aa

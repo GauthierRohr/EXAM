@@ -1,0 +1,36 @@
+Assignment name  : rip
+Expected files   : rip.c
+Allowed functions: malloc, free, write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single string of parentheses as argument. It must
+print all possible results of removing the minimal number of parentheses needed
+to make the string valid (well-formed), one result per line.
+
+- A parenthesis string is valid if every opening parenthesis '(' has a
+  corresponding closing parenthesis ')', and they are properly nested.
+- If the input is already valid, it must print the input itself.
+- Each result must keep the order of the remaining characters.
+- The program must generate all distinct solutions with the minimal number of
+  removals.
+- If the number of arguments is not 1, the program should do nothing.
+
+Examples:
+
+$> ./rip "()())()"
+()()()
+(())()
+
+$> ./rip "(a)())()"
+(a)()()
+(a())()
+
+$> ./rip ")("
+(no output)
+
+$> ./rip "((()"
+(())
+()()
+
+$> ./rip "(()())"
+(()())

@@ -1,0 +1,28 @@
+Assignment name  : powerset
+Expected files   : powerset.c
+Allowed functions: malloc, free, printf, atoi
+--------------------------------------------------------------------------------
+
+Write a program that takes a target sum as the first argument and a list of
+integers as the following arguments. It must print all unique subsets of the
+given set of integers whose sum is equal to the target. Each subset must be
+printed as space-separated numbers on a single line.
+
+- Each number must be printed only once per subset.
+- If there is no solution, the program should print nothing.
+- If the number of arguments is less than 2, the program should return 1.
+
+Examples:
+
+$> ./powerset 5 1 2 3
+2 3
+
+$> ./powerset 7 2 4 6
+(no output)
+
+$> ./powerset 10 2 3 5 7
+2 3 5
+3 7
+
+$> ./powerset 8 8
+8
